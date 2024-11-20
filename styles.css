@@ -5,7 +5,9 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .container {
@@ -16,7 +18,11 @@ body {
     width: 600px;
     text-align: center;
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-grow: 1;
 }
+
 
 h1 {
     margin-bottom: 20px;
@@ -65,7 +71,7 @@ button:hover {
 
 #constantSelection {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;  
     margin-bottom: 15px;
     text-align: left;
 }
@@ -103,11 +109,16 @@ button:hover {
     text-align: justify;
 }
 
-.footer {
-    width: 70%;
-    margin: 30px auto 0 auto;
-    padding-top: 15px;
-    border-top: 1px solid #ab0d0d;
-    font-size: 1rem;
-  }
+.footer-container {
+    width: 100%;
+}
 
+.footer {
+    display: flex;
+    border-top: 1px solid #ab0d0d;
+    position: sticky;
+    bottom: 0; 
+    font-size: 0.9rem;
+    justify-content: center;
+    width: 100%;
+}
