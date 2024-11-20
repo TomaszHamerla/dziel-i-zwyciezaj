@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #757171;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #a7a2a2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+}
+
+input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#constantSelection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+#constantSelection label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.deleteRowButton {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+.deleteRowButton:hover {
+    background-color: #bd2130;
+}
+
+.resultRow {
+    display: flex;
+    justify-content: start;
+}
+
+.resultRowCut {
+    color: #05600d;
+}
+
+.resultRowLi {
+    margin: 1rem;
+    text-align: justify;
+}
+
+.footer {
+    width: 70%;
+    margin: 30px auto 0 auto;
+    padding-top: 15px;
+    border-top: 1px solid #ab0d0d;
+    font-size: 1rem;
+  }
+

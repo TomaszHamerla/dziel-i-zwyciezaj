@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obliczanie Zapotrzebowania</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Obliczanie zapotrzebowania na pręty</h1>
+        <form id="inputForm">
+            <div id="constantSelection">
+                <label>
+                    <input type="radio" name="constant" value="6000" checked>
+                    Stała: 6 m
+                </label>
+                <label>
+                    <input type="radio" name="constant" value="12000">
+                    Stała: 12 m
+                </label>
+            </div>
+            <div id="inputsContainer">
+                <div class="inputGroup">
+                    <label for="length1">Długość (mm):</label>
+                    <input type="number" id="length1" class="length" required>
+                    <label for="quantity1">Ilość:</label>
+                    <input type="number" id="quantity1" class="quantity" required>
+                </div>
+            </div>
+            <button type="button" id="addRowButton">Dodaj wiersz</button>
+            <button type="button" id="calculateButton">Oblicz</button>
+        </form>
+        <div id="result"></div>
+        <div id="cutSketch" style="margin-top: 20px;"></div>
+        <p class="footer">
+            &copy;Made by Tomasz Hamerla
+          </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
